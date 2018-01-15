@@ -22,7 +22,7 @@ def total(person):
                 hasAce = 1
             #If card isnt an ace
             else:    
-                total += 10
+                total += 11
             
         i += 1   
  
