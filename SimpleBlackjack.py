@@ -43,11 +43,10 @@ def printStatus(player, dealer):
     print("Dealer's total is: " + str(total(dealer)) + ": ")
     i = 0
     while i<len(dealer):
-        if i == (len(dealer)-1):
-            print(dealer[i])
-        else:
-            print(dealer[i], end=", ")
-        i += 1
+       print(dealer[i], end="")
+       i += 1
+       if i < len(dealer):
+           print(", ", end="")
 
     #Show Player's total and cards
     print("Player's total is: " + str(total(player)) + ": ")
